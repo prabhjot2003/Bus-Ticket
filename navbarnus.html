@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar bus </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbarbus.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-xl-12 hide">
+                <div class="navheader ">
+                    <nav class="navbar navbar-expand-lg navbar-warning  bg-warning">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <img src="/image/rdc-redbus-logo.svg">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 going">
+                                    <li class="nav-item outer">
+                                        <a class="nav-link" aria-current="page" href="#"><b>HOME</b></a>
+                                    </li>
+                                    <li class="nav-item outer">
+                                        <a class="nav-link" aria-current="page" href="#"><b>ABOUT</b></a>
+                                    </li>
+                                    <li class="nav-item outer">
+                                        <a class="nav-link " aria-current="page" href="#"><b>SERVICE</b></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="#"><b>INQUIRY</b></a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- center -->
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12  color-full">
+                    <div class="row field">
+                        <div class="col-xl-3">
+                            <form>
+                                <label for="Leaving"><b>Leaving From:</b></label>
+                                <input list="Leavings" name="Leaving" id="starting" placeholder="Leaving From">
+                                <datalist id="Leavings">
+                                    <option value="Chandigarh"></option>
+                                    <option value="Delhi"></option>
+                                    <option value="Sujanpur H.P"></option>
+                                    <option value="Hamirpur"></option>
+                                    <option value="Kangra"></option>
+                                    <option value="Baijnath"></option>
+                                    <option value="Una"></option>
+                                </datalist>
+                            </form>
+                        </div>
+
+                        <div class="col-xl-3">
+                            <form>
+                                <label for="Leaving"><b>Going To:</b></label>
+                                <input list="Leavings" name="Leaving" id="ending" placeholder="Going To">
+                                <datalist id="Leavings">
+                                    <option value="Assam"></option>
+                                    <option value="Duabi"></option>
+                                    <option value="Sujanpur H.P"></option>
+                                    <option value="Hamirpur"></option>
+                                    <option value="Kangra"></option>
+                                    <option value="Baijnath"></option>
+                                    <option value="Una"></option>
+                                </datalist>
+                            </form>
+                        </div>
+
+                        <div class="col-xl-3">
+                            <form>
+                                <label for="depature"><b>Date :</b></label>
+                                <input type="date" id="date" size="30">
+                            </form>
+                        </div>
+                        <div class="col-xl-3">
+                            <button type="button" class="btn btn-dark  lenght" onclick="searchbuses()"><b>Search</b></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="box" id="buslist">
+                        <h3>List Of Buses</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/image/lastpic.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bus {
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.653);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(225, 164, 9);
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(249, 179, 1);;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+
+.seat.selected {
+    background-color: #14A44D;
+    border: 1px solid black;
+    color: #fff;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lastsets{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.lastone {
+    margin-top: 2%;
+    padding: 35px;
+}
+.booking-click{
+    width: 100%;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.booking-click:hover{
+    background-color: #14A44D;
+}
+
+
+
+
+
+
+
+
+
